@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/joshuawarnock/fate/issues"
   },
-  "homepage": "https://github.com/joshuawarnock/fate#readme"
+  "homepage": "https://github.com/joshuawarnock/fate#readme",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-mocha": "^2.1.3",
+    "gulp-nodemon": "^2.0.4",
+    "wiredep": "^2.2.2"
+  }
 }
