@@ -1,0 +1,19 @@
+{
+  "name": "fate",
+  "version": "0.0.0",
+  "homepage": "https://github.com/joshuawarnock/fate",
+  "authors": [
+    "mugillicutty <joshua.warnock@gmail.com>"
+  ],
+  "description": "It is a mobile application so gamers can see other players gaming behavior traits.",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
