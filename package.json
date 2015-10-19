@@ -1,0 +1,19 @@
+{
+  "name": "fate",
+  "version": "1.0.0",
+  "description": "It is a mobile application so gamers can see other players gaming behavior traits.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuawarnock/fate.git"
+  },
+  "author": "Joshua Warnock",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joshuawarnock/fate/issues"
+  },
+  "homepage": "https://github.com/joshuawarnock/fate#readme"
+}
