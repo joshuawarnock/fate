@@ -6,10 +6,10 @@ var express = require('express');
 var router = express.Router();
 var request = require('request');
 
-router.get('/member/:member', function(req, res) {
+router.get('/member/:screename', function(req, res) {
   var memOptions = {
     url: 'https://www.bungie.net/platform/' +
-    'destiny/2/Stats/GetMembershipIdByDisplayName/' + req.params.member + '/',
+    'destiny/2/Stats/GetMembershipIdByDisplayName/' + req.params.screename + '/',
     headers: {
       'X-API-Key': 'aafd5349326b4892b7d2c4f50d0ab751'
     }
@@ -28,8 +28,22 @@ router.get('/customer/:member', function(req, res) {
     }
   };
   request(charOptions, function(error, response, body) {
-    var charID = JSON.parse(body);
+    var charID = JSON.parse(body).Response.data.characters[0].characterBase.characterId;
     res.send(charID);
+  })
+});
+
+router.get('/stats/:member/:character', function(req, res) {
+  var statOptions = {
+    url: 'https://www.bungie.net/platform/destiny/Stats/2/' + req.params.member +
+    '/' + req.params.character + '/',
+    headers: {
+      'X-API-Key': 'aafd5349326b4892b7d2c4f50d0ab751'
+    }
+  };
+  request(statOptions, function(error, response, body) {
+    var charStats = JSON.parse(body).Response.allPvP.allTime.abilityKills.basic.displayValue;
+    res.send(charStats);
   })
 });
 
