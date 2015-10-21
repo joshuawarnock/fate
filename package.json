@@ -17,9 +17,13 @@
   },
   "homepage": "https://github.com/joshuawarnock/fate#readme",
   "dependencies": {
+    "body-parser": "^1.14.1",
+    "destiny-client": "^0.5.1",
     "gulp": "^3.9.0",
     "gulp-mocha": "^2.1.3",
     "gulp-nodemon": "^2.0.4",
+    "mongoose": "^4.1.12",
+    "request": "^2.65.0",
     "supertest": "^1.1.0",
     "wiredep": "^2.2.2"
   }

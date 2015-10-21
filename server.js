@@ -4,6 +4,7 @@
 
 var express = require('express');
 var app = express();
+var bodyParser = require('body-parser');
 var api = require('./api.js');
 
 app.use(function(req, res, next) {
@@ -13,7 +14,10 @@ app.use(function(req, res, next) {
 
 app.use(express.static('public'));
 
-//app.use('/api',api);
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+app.use('/api',api);
 
 var server = app.listen(1555, function() {
   console.log('Server is running at http://localhost:' +

@@ -13,13 +13,13 @@ gulp.task('start', function() {
   })
 });
 
+gulp.task('watch', function() {
+  gulp.watch('*.js', ['test']);
+});
+
 gulp.task('test', function() {
   return gulp.src('test.js', {read: false})
       .pipe(mocha());
-});
-
-gulp.task('watch', function() {
-  gulp.watch('*.js', ['test']);
 });
 
 gulp.task('bower', function() {
