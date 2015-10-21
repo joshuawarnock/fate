@@ -17,7 +17,7 @@ app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use('/api',api);
+app.use('/',api);
 
 var server = app.listen(1555, function() {
   console.log('Server is running at http://localhost:' +
