@@ -42,10 +42,9 @@ router.get('/stats/:member/:character', function(req, res) {
     }
   };
   request(statOptions, function(error, response, body) {
-    var charStats = JSON.parse(body).Response.allPvP.allTime.abilityKills.basic.displayValue;
-    var otherStats = JSON.parse(body).Response.allPvP.allTime.abilityKills.pga.displayValue;
+    var charStats = JSON.parse(body).Response;
+    debugger;
     res.send(charStats);
-    res.send(otherStats);
   })
 });
 
