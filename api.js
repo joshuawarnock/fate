@@ -43,7 +43,22 @@ router.get('/stats/:member/:character', function(req, res) {
   };
   request(statOptions, function(error, response, body) {
     var charStats = JSON.parse(body).Response.allPvP.allTime.abilityKills.basic.displayValue;
+    var otherStats = JSON.parse(body).Response.allPvP.allTime.abilityKills.pga.displayValue;
     res.send(charStats);
+    res.send(otherStats);
+  })
+});
+
+router.get('/aggstats/:member', function(req, res) {
+  var aggstatOptions = {
+    url: 'https://www.bungie.net/platform/destiny/Stats/Account/2/' + req.params.member + '/',
+    headers: {
+      'X-API-Key': 'aafd5349326b4892b7d2c4f50d0ab751'
+    }
+  };
+  request(aggstatOptions, function(error, response, body) {
+    var aggStats = JSON.parse(body);
+    res.send(aggStats);
   })
 });
 
