@@ -42,7 +42,7 @@ router.get('/stats/:member/:character', function(req, res) {
     }
   };
   request(statOptions, function(error, response, body) {
-    var charStats = JSON.parse(body).Response;
+    var charStats = JSON.parse(body).Response.allPvP.allTime;
     debugger;
     res.send(charStats);
   })
