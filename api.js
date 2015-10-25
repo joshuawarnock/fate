@@ -42,7 +42,7 @@ router.get('/stats/:member/:character', function(req, res) {
     }
   };
   request(statOptions, function(error, response, body) {
-    var charStats = JSON.parse(body).Response.allPvP.allTime;
+    var charStats = JSON.parse(body).Response;
     debugger;
     res.send(charStats);
   })
@@ -56,7 +56,7 @@ router.get('/aggstats/:member', function(req, res) {
     }
   };
   request(aggstatOptions, function(error, response, body) {
-    var aggStats = JSON.parse(body);
+    var aggStats = JSON.parse(body).Response;
     res.send(aggStats);
   })
 });
