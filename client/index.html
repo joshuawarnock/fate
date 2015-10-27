@@ -17,17 +17,384 @@
   <p>{{memberid}}</p>
   <p>{{clientid}}</p>
 
-  <p>pvp</p>
-  <p>{{pvp}}</p>
-  <p>allStrikes</p>
-  <p>{{allstrike}}</p>
-  <p>patrol</p>
-  <p>{{patrol}}</p>
-  <p>raid</p>
-  <p>{{raid}}</p>
-  <p>story</p>
-  <p>{{story}}</p>
+  <p>PVP</p>
+  <!--<p>{{pvp}}</p>-->
 
+  <p><span>	{{pvpabilityKillsid}}	</span><span>	{{pvpabilityKillsvalue}}</span></p>
+  <p><span>	{{pvpactivitiesEnteredid}}	</span><span>	{{pvpactivitiesEnteredvalue}}</span></p>
+  <p><span>	{{pvpactivitiesWonid}}	</span><span>	{{pvpactivitiesWonvalue}}</span></p>
+  <p><span>	{{pvpallParticipantsCountid}}	</span><span>	{{pvpallParticipantsCountvalue}}</span></p>
+  <p><span>	{{pvpallParticipantsScoreid}}	</span><span>	{{pvpallParticipantsScorevalue}}</span></p>
+  <p><span>	{{pvpallParticipantsTimePlayedid}}	</span><span>	{{pvpallParticipantsTimePlayedvalue}}</span></p>
+  <p><span>	{{pvpassistsid}}	</span><span>	{{pvpassistsvalue}}</span></p>
+  <p><span>	{{pvpaverageDeathDistanceid}}	</span><span>	{{pvpaverageDeathDistancevalue}}</span></p>
+  <p><span>	{{pvpaverageKillDistanceid}}	</span><span>	{{pvpaverageKillDistancevalue}}</span></p>
+  <p><span>	{{pvpaverageLifespanid}}	</span><span>	{{pvpaverageLifespanvalue}}</span></p>
+  <p><span>	{{pvpaverageScorePerKillid}}	</span><span>	{{pvpaverageScorePerKillvalue}}</span></p>
+  <p><span>	{{pvpaverageScorePerLifeid}}	</span><span>	{{pvpaverageScorePerLifevalue}}</span></p>
+  <p><span>	{{pvpbestSingleGameKillsid}}	</span><span>	{{pvpbestSingleGameKillsvalue}}</span></p>
+  <p><span>	{{pvpbestSingleGameScoreid}}	</span><span>	{{pvpbestSingleGameScorevalue}}</span></p>
+  <p><span>	{{pvpcloseCallsid}}	</span><span>	{{pvpcloseCallsvalue}}</span></p>
+  <p><span>	{{pvpcombatRatingid}}	</span><span>	{{pvpcombatRatingvalue}}</span></p>
+  <p><span>	{{pvpdeathsid}}	</span><span>	{{pvpdeathsvalue}}</span></p>
+  <p><span>	{{pvpdefensiveKillsid}}	</span><span>	{{pvpdefensiveKillsvalue}}</span></p>
+  <p><span>	{{pvpdominationKillsid}}	</span><span>	{{pvpdominationKillsvalue}}</span></p>
+  <p><span>	{{pvphighestCharacterLevelid}}	</span><span>	{{pvphighestCharacterLevelvalue}}</span></p>
+  <p><span>	{{pvphighestLightLevelid}}	</span><span>	{{pvphighestLightLevelvalue}}</span></p>
+  <p><span>	{{pvpkillsid}}	</span><span>	{{pvpkillsvalue}}</span></p>
+  <p><span>	{{pvpkillsDeathsAssistsid}}	</span><span>	{{pvpkillsDeathsAssistsvalue}}</span></p>
+  <p><span>	{{pvpkillsDeathsRatioid}}	</span><span>	{{pvpkillsDeathsRatiovalue}}</span></p>
+  <p><span>	{{pvplongestKillDistanceid}}	</span><span>	{{pvplongestKillDistancevalue}}</span></p>
+  <p><span>	{{pvplongestKillSpreeid}}	</span><span>	{{pvplongestKillSpreevalue}}</span></p>
+  <p><span>	{{pvplongestSingleLifeid}}	</span><span>	{{pvplongestSingleLifevalue}}</span></p>
+  <p><span>	{{pvpmostPrecisionKillsid}}	</span><span>	{{pvpmostPrecisionKillsvalue}}</span></p>
+  <p><span>	{{pvpobjectivesCompletedid}}	</span><span>	{{pvpobjectivesCompletedvalue}}</span></p>
+  <p><span>	{{pvpoffensiveKillsid}}	</span><span>	{{pvpoffensiveKillsvalue}}</span></p>
+  <p><span>	{{pvporbsDroppedid}}	</span><span>	{{pvporbsDroppedvalue}}</span></p>
+  <p><span>	{{pvporbsGatheredid}}	</span><span>	{{pvporbsGatheredvalue}}</span></p>
+  <p><span>	{{pvpprecisionKillsid}}	</span><span>	{{pvpprecisionKillsvalue}}</span></p>
+  <p><span>	{{pvprelicsCapturedid}}	</span><span>	{{pvprelicsCapturedvalue}}</span></p>
+  <p><span>	{{pvpremainingTimeAfterQuitSecondsid}}	</span><span>	{{pvpremainingTimeAfterQuitSecondsvalue}}</span></p>
+  <p><span>	{{pvpresurrectionsPerformedid}}	</span><span>	{{pvpresurrectionsPerformedvalue}}</span></p>
+  <p><span>	{{pvpresurrectionsReceivedid}}	</span><span>	{{pvpresurrectionsReceivedvalue}}</span></p>
+  <p><span>	{{pvpscoreid}}	</span><span>	{{pvpscorevalue}}</span></p>
+  <p><span>	{{pvpsecondsPlayedid}}	</span><span>	{{pvpsecondsPlayedvalue}}</span></p>
+  <p><span>	{{pvpsuicidesid}}	</span><span>	{{pvpsuicidesvalue}}</span></p>
+  <p><span>	{{pvpteamScoreid}}	</span><span>	{{pvpteamScorevalue}}</span></p>
+  <p><span>	{{pvptotalActivityDurationSecondsid}}	</span><span>	{{pvptotalActivityDurationSecondsvalue}}</span></p>
+  <p><span>	{{pvptotalDeathDistanceid}}	</span><span>	{{pvptotalDeathDistancevalue}}</span></p>
+  <p><span>	{{pvptotalKillDistanceid}}	</span><span>	{{pvptotalKillDistancevalue}}</span></p>
+  <p><span>	{{pvpweaponBestTypeid}}	</span><span>	{{pvpweaponBestTypevalue}}</span></p>
+  <p><span>	{{pvpAutoRifleid}}	</span><span>	{{pvpAutoRiflevalue}}</span></p>
+  <p><span>	{{pvpweaponKillsAutoRifleid}}	</span><span>	{{pvpweaponKillsAutoRiflevalue}}</span></p>
+  <p><span>	{{pvpweaponKillsFusionRifleid}}	</span><span>	{{pvpweaponKillsFusionRiflevalue}}</span></p>
+  <p><span>	{{pvpweaponKillsGrenadeid}}	</span><span>	{{pvpweaponKillsGrenadevalue}}</span></p>
+  <p><span>	{{pvpweaponKillsHandCannonid}}	</span><span>	{{pvpweaponKillsHandCannonvalue}}</span></p>
+  <p><span>	{{pvpweaponKillsMachinegunid}}	</span><span>	{{pvpweaponKillsMachinegunvalue}}</span></p>
+  <p><span>	{{pvpweaponKillsMeleeid}}	</span><span>	{{pvpweaponKillsMeleevalue}}</span></p>
+  <p><span>	{{pvpweaponKillsPulseRifleid}}	</span><span>	{{pvpweaponKillsPulseRiflevalue}}</span></p>
+  <p><span>	{{pvpweaponKillsRelicid}}	</span><span>	{{pvpweaponKillsRelicvalue}}</span></p>
+  <p><span>	{{pvpweaponKillsRocketLauncherid}}	</span><span>	{{pvpweaponKillsRocketLaunchervalue}}</span></p>
+  <p><span>	{{pvpweaponKillsScoutRifleid}}	</span><span>	{{pvpweaponKillsScoutRiflevalue}}</span></p>
+  <p><span>	{{pvpweaponKillsShotgunid}}	</span><span>	{{pvpweaponKillsShotgunvalue}}</span></p>
+  <p><span>	{{pvpweaponKillsSideArmid}}	</span><span>	{{pvpweaponKillsSideArmvalue}}</span></p>
+  <p><span>	{{pvpweaponKillsSniperid}}	</span><span>	{{pvpweaponKillsSnipervalue}}</span></p>
+  <p><span>	{{pvpweaponKillsSubmachinegunid}}	</span><span>	{{pvpweaponKillsSubmachinegunvalue}}</span></p>
+  <p><span>	{{pvpweaponKillsSuperid}}	</span><span>	{{pvpweaponKillsSupervalue}}</span></p>
+  <p><span>	{{pvpweaponKillsSwordid}}	</span><span>	{{pvpweaponKillsSwordvalue}}</span></p>
+  <p><span>	{{pvpwinLossRatioid}}	</span><span>	{{pvpwinLossRatiovalue}}</span></p>
+  <p><span>	{{pvpzonesCapturedid}}	</span><span>	{{pvpzonesCapturedvalue}}</span></p>
+  <p><span>	{{pvpzonesNeutralizedid}}	</span><span>	{{pvpzonesNeutralizedvalue}}</span></p>
+
+
+  <p>ALLSTRIKES</p>
+  <!--<p>{{allstrike}}</p>-->
+
+  <p><span>	{{strikesabilityKillsid}}	</span><span>	{{strikesabilityKillsvalues}}	</span></p>
+  <p><span>	{{strikesactivitiesClearedid}}	</span><span>	{{strikesactivitiesClearedvalues}}	</span></p>
+  <p><span>	{{strikesactivitiesEnteredid}}	</span><span>	{{strikesactivitiesEnteredvalues}}	</span></p>
+  <p><span>	{{strikesallParticipantsCountid}}	</span><span>	{{strikesallParticipantsCountvalues}}	</span></p>
+  <p><span>	{{strikesallParticipantsTimePlayedid}}	</span><span>	{{strikesallParticipantsTimePlayedvalues}}	</span></p>
+  <p><span>	{{strikesassistsid}}	</span><span>	{{strikesassistsvalues}}	</span></p>
+  <p><span>	{{strikesaverageDeathDistanceid}}	</span><span>	{{strikesaverageDeathDistancevalues}}	</span></p>
+  <p><span>	{{strikesaverageKillDistanceid}}	</span><span>	{{strikesaverageKillDistancevalues}}	</span></p>
+  <p><span>	{{strikesaverageLifespanid}}	</span><span>	{{strikesaverageLifespanvalues}}	</span></p>
+  <p><span>	{{strikesbestSingleGameKillsid}}	</span><span>	{{strikesbestSingleGameKillsvalues}}	</span></p>
+  <p><span>	{{strikescourtOfOryxAttemptsid}}	</span><span>	{{strikescourtOfOryxAttemptsvalues}}	</span></p>
+  <p><span>	{{strikescourtOfOryxCompletionsid}}	</span><span>	{{strikescourtOfOryxCompletionsvalues}}	</span></p>
+  <p><span>	{{strikescourtOfOryxWinsTier1id}}	</span><span>	{{strikescourtOfOryxWinsTier1values}}	</span></p>
+  <p><span>	{{strikesdeathsid}}	</span><span>	{{strikesdeathsvalues}}	</span></p>
+  <p><span>	{{strikesfastestCompletionid}}	</span><span>	{{strikesfastestCompletionvalues}}	</span></p>
+  <p><span>	{{strikeshighestCharacterLevelid}}	</span><span>	{{strikeshighestCharacterLevelvalues}}	</span></p>
+  <p><span>	{{strikeshighestLightLevelid}}	</span><span>	{{strikeshighestLightLevelvalues}}	</span></p>
+  <p><span>	{{strikeskillsid}}	</span><span>	{{strikeskillsvalues}}	</span></p>
+  <p><span>	{{strikeskillsDeathsAssistsid}}	</span><span>	{{strikeskillsDeathsAssistsvalues}}	</span></p>
+  <p><span>	{{strikeskillsDeathsRatioid}}	</span><span>	{{strikeskillsDeathsRatiovalues}}	</span></p>
+  <p><span>	{{strikeslongestKillDistanceid}}	</span><span>	{{strikeslongestKillDistancevalues}}	</span></p>
+  <p><span>	{{strikeslongestKillSpreeid}}	</span><span>	{{strikeslongestKillSpreevalues}}	</span></p>
+  <p><span>	{{strikeslongestSingleLifeid}}	</span><span>	{{strikeslongestSingleLifevalues}}	</span></p>
+  <p><span>	{{strikesmostPrecisionKillsid}}	</span><span>	{{strikesmostPrecisionKillsvalues}}	</span></p>
+  <p><span>	{{strikesobjectivesCompletedid}}	</span><span>	{{strikesobjectivesCompletedvalues}}	</span></p>
+  <p><span>	{{strikesorbsDroppedid}}	</span><span>	{{strikesorbsDroppedvalues}}	</span></p>
+  <p><span>	{{strikesorbsGatheredid}}	</span><span>	{{strikesorbsGatheredvalues}}	</span></p>
+  <p><span>	{{strikesprecisionKillsid}}	</span><span>	{{strikesprecisionKillsvalues}}	</span></p>
+  <p><span>	{{strikespublicEventsCompletedid}}	</span><span>	{{strikespublicEventsCompletedvalues}}	</span></p>
+  <p><span>	{{strikespublicEventsJoinedid}}	</span><span>	{{strikespublicEventsJoinedvalues}}	</span></p>
+  <p><span>	{{strikesremainingTimeAfterQuitSecondsid}}	</span><span>	{{strikesremainingTimeAfterQuitSecondsvalues}}	</span></p>
+  <p><span>	{{strikesresurrectionsPerformedid}}	</span><span>	{{strikesresurrectionsPerformedvalues}}	</span></p>
+  <p><span>	{{strikesresurrectionsReceivedid}}	</span><span>	{{strikesresurrectionsReceivedvalues}}	</span></p>
+  <p><span>	{{strikessecondsPlayedid}}	</span><span>	{{strikessecondsPlayedvalues}}	</span></p>
+  <p><span>	{{strikessuicidesid}}	</span><span>	{{strikessuicidesvalues}}	</span></p>
+  <p><span>	{{strikestotalActivityDurationSecondsid}}	</span><span>	{{strikestotalActivityDurationSecondsvalues}}	</span></p>
+  <p><span>	{{strikestotalDeathDistanceid}}	</span><span>	{{strikestotalDeathDistancevalues}}	</span></p>
+  <p><span>	{{strikestotalKillDistanceid}}	</span><span>	{{strikestotalKillDistancevalues}}	</span></p>
+  <p><span>	{{strikesweaponBestTypeid}}	</span><span>	{{strikesweaponBestTypevalues}}	</span></p>
+  <p><span>	{{strikesweaponKillsAutoRifleid}}	</span><span>	{{strikesweaponKillsAutoRiflevalues}}	</span></p>
+  <p><span>	{{strikesweaponKillsFusionRifleid}}	</span><span>	{{strikesweaponKillsFusionRiflevalues}}	</span></p>
+  <p><span>	{{strikesweaponKillsGrenadeid}}	</span><span>	{{strikesweaponKillsGrenadevalues}}	</span></p>
+  <p><span>	{{strikesweaponKillsHandCannonid}}	</span><span>	{{strikesweaponKillsHandCannonvalues}}	</span></p>
+  <p><span>	{{strikesweaponKillsMachinegunid}}	</span><span>	{{strikesweaponKillsMachinegunvalues}}	</span></p>
+  <p><span>	{{strikesweaponKillsMeleeid}}	</span><span>	{{strikesweaponKillsMeleevalues}}	</span></p>
+  <p><span>	{{strikesweaponKillsPulseRifleid}}	</span><span>	{{strikesweaponKillsPulseRiflevalues}}	</span></p>
+  <p><span>	{{strikesweaponKillsRelicid}}	</span><span>	{{strikesweaponKillsRelicvalues}}	</span></p>
+  <p><span>	{{strikesweaponKillsRocketLauncherid}}	</span><span>	{{strikesweaponKillsRocketLaunchervalues}}	</span></p>
+  <p><span>	{{strikesweaponKillsScoutRifleid}}	</span><span>	{{strikesweaponKillsScoutRiflevalues}}	</span></p>
+  <p><span>	{{strikesweaponKillsShotgunid}}	</span><span>	{{strikesweaponKillsShotgunvalues}}	</span></p>
+  <p><span>	{{strikesweaponKillsSideArmid}}	</span><span>	{{strikesweaponKillsSideArmvalues}}	</span></p>
+  <p><span>	{{strikesweaponKillsSniperid}}	</span><span>	{{strikesweaponKillsSnipervalues}}	</span></p>
+  <p><span>	{{strikesweaponKillsSubmachinegunid}}	</span><span>	{{strikesweaponKillsSubmachinegunvalues}}	</span></p>
+  <p><span>	{{strikesweaponKillsSuperid}}	</span><span>	{{strikesweaponKillsSupervalues}}	</span></p>
+  <p><span>	{{strikesweaponKillsSwordid}}	</span><span>	{{strikesweaponKillsSwordvalues}}	</span></p>
+
+  <p>PATROL</p>
+  <!--<p>{{patrol}}</p>-->
+
+  <p><span>	{{patrolabilityKillsid}}	</span><span>	{{patrolabilityKillsvalues}}	</span></p>
+  <p><span>	{{patrolactivitiesClearedid}}	</span><span>	{{patrolactivitiesClearedvalues}}	</span></p>
+  <p><span>	{{patrolactivitiesEnteredid}}	</span><span>	{{patrolactivitiesEnteredvalues}}	</span></p>
+  <p><span>	{{patrolallParticipantsCountid}}	</span><span>	{{patrolallParticipantsCountvalues}}	</span></p>
+  <p><span>	{{patrolallParticipantsTimePlayedid}}	</span><span>	{{patrolallParticipantsTimePlayedvalues}}	</span></p>
+  <p><span>	{{patrolassistsid}}	</span><span>	{{patrolassistsvalues}}	</span></p>
+  <p><span>	{{patrolaverageDeathDistanceid}}	</span><span>	{{patrolaverageDeathDistancevalues}}	</span></p>
+  <p><span>	{{patrolaverageKillDistanceid}}	</span><span>	{{patrolaverageKillDistancevalues}}	</span></p>
+  <p><span>	{{patrolaverageLifespanid}}	</span><span>	{{patrolaverageLifespanvalues}}	</span></p>
+  <p><span>	{{patrolbestSingleGameKillsid}}	</span><span>	{{patrolbestSingleGameKillsvalues}}	</span></p>
+  <p><span>	{{patrolcourtOfOryxAttemptsid}}	</span><span>	{{patrolcourtOfOryxAttemptsvalues}}	</span></p>
+  <p><span>	{{patrolcourtOfOryxCompletionsid}}	</span><span>	{{patrolcourtOfOryxCompletionsvalues}}	</span></p>
+  <p><span>	{{patrolcourtOfOryxWinsTier1id}}	</span><span>	{{patrolcourtOfOryxWinsTier1values}}	</span></p>
+  <p><span>	{{patroldeathsid}}	</span><span>	{{patroldeathsvalues}}	</span></p>
+  <p><span>	{{patrolhighestCharacterLevelid}}	</span><span>	{{patrolhighestCharacterLevelvalues}}	</span></p>
+  <p><span>	{{patrolhighestLightLevelid}}	</span><span>	{{patrolhighestLightLevelvalues}}	</span></p>
+  <p><span>	{{patrolkillsid}}	</span><span>	{{patrolkillsvalues}}	</span></p>
+  <p><span>	{{patrolkillsDeathsAssistsid}}	</span><span>	{{patrolkillsDeathsAssistsvalues}}	</span></p>
+  <p><span>	{{patrolkillsDeathsRatioid}}	</span><span>	{{patrolkillsDeathsRatiovalues}}	</span></p>
+  <p><span>	{{patrollongestKillDistanceid}}	</span><span>	{{patrollongestKillDistancevalues}}	</span></p>
+  <p><span>	{{patrollongestKillSpreeid}}	</span><span>	{{patrollongestKillSpreevalues}}	</span></p>
+  <p><span>	{{patrollongestSingleLifeid}}	</span><span>	{{patrollongestSingleLifevalues}}	</span></p>
+  <p><span>	{{patrolmostPrecisionKillsid}}	</span><span>	{{patrolmostPrecisionKillsvalues}}	</span></p>
+  <p><span>	{{patrolobjectivesCompletedid}}	</span><span>	{{patrolobjectivesCompletedvalues}}	</span></p>
+  <p><span>	{{patrolorbsDroppedid}}	</span><span>	{{patrolorbsDroppedvalues}}	</span></p>
+  <p><span>	{{patrolorbsGatheredid}}	</span><span>	{{patrolorbsGatheredvalues}}	</span></p>
+  <p><span>	{{patrolprecisionKillsid}}	</span><span>	{{patrolprecisionKillsvalues}}	</span></p>
+  <p><span>	{{patrolpublicEventsCompletedid}}	</span><span>	{{patrolpublicEventsCompletedvalues}}	</span></p>
+  <p><span>	{{patrolpublicEventsJoinedid}}	</span><span>	{{patrolpublicEventsJoinedvalues}}	</span></p>
+  <p><span>	{{patrolremainingTimeAfterQuitSecondsid}}	</span><span>	{{patrolremainingTimeAfterQuitSecondsvalues}}	</span></p>
+  <p><span>	{{patrolresurrectionsPerformedid}}	</span><span>	{{patrolresurrectionsPerformedvalues}}	</span></p>
+  <p><span>	{{patrolresurrectionsReceivedid}}	</span><span>	{{patrolresurrectionsReceivedvalues}}	</span></p>
+  <p><span>	{{patrolsecondsPlayedid}}	</span><span>	{{patrolsecondsPlayedvalues}}	</span></p>
+  <p><span>	{{patrolsuicidesid}}	</span><span>	{{patrolsuicidesvalues}}	</span></p>
+  <p><span>	{{patroltotalActivityDurationSecondsid}}	</span><span>	{{patroltotalActivityDurationSecondsvalues}}	</span></p>
+  <p><span>	{{patroltotalDeathDistanceid}}	</span><span>	{{patroltotalDeathDistancevalues}}	</span></p>
+  <p><span>	{{patroltotalKillDistanceid}}	</span><span>	{{patroltotalKillDistancevalues}}	</span></p>
+  <p><span>	{{patrolweaponBestTypeid}}	</span><span>	{{patrolweaponBestTypevalues}}	</span></p>
+  <p><span>	{{patrolweaponKillsAutoRifleid}}	</span><span>	{{patrolweaponKillsAutoRiflevalues}}	</span></p>
+  <p><span>	{{patrolweaponKillsFusionRifleid}}	</span><span>	{{patrolweaponKillsFusionRiflevalues}}	</span></p>
+  <p><span>	{{patrolweaponKillsGrenadeid}}	</span><span>	{{patrolweaponKillsGrenadevalues}}	</span></p>
+  <p><span>	{{patrolweaponKillsHandCannonid}}	</span><span>	{{patrolweaponKillsHandCannonvalues}}	</span></p>
+  <p><span>	{{patrolweaponKillsMachinegunid}}	</span><span>	{{patrolweaponKillsMachinegunvalues}}	</span></p>
+  <p><span>	{{patrolweaponKillsMeleeid}}	</span><span>	{{patrolweaponKillsMeleevalues}}	</span></p>
+  <p><span>	{{patrolweaponKillsPulseRifleid}}	</span><span>	{{patrolweaponKillsPulseRiflevalues}}	</span></p>
+  <p><span>	{{patrolweaponKillsRelicid}}	</span><span>	{{patrolweaponKillsRelicvalues}}	</span></p>
+  <p><span>	{{patrolweaponKillsRocketLauncherid}}	</span><span>	{{patrolweaponKillsRocketLaunchervalues}}	</span></p>
+  <p><span>	{{patrolweaponKillsScoutRifleid}}	</span><span>	{{patrolweaponKillsScoutRiflevalues}}	</span></p>
+  <p><span>	{{patrolweaponKillsShotgunid}}	</span><span>	{{patrolweaponKillsShotgunvalues}}	</span></p>
+  <p><span>	{{patrolweaponKillsSideArmid}}	</span><span>	{{patrolweaponKillsSideArmvalues}}	</span></p>
+  <p><span>	{{patrolweaponKillsSniperid}}	</span><span>	{{patrolweaponKillsSnipervalues}}	</span></p>
+  <p><span>	{{patrolweaponKillsSubmachinegunid}}	</span><span>	{{patrolweaponKillsSubmachinegunvalues}}	</span></p>
+  <p><span>	{{patrolweaponKillsSuperid}}	</span><span>	{{patrolweaponKillsSupervalues}}	</span></p>
+  <p><span>	{{patrolweaponKillsSwordid}}	</span><span>	{{patrolweaponKillsSwordvalues}}	</span></p>
+
+  <p>RAID</p>
+  <!--<p>{{raid}}</p>-->
+
+  <p><span>	{{raidabilityKillsid}}	</span><span>	{{raidabilityKillsvalue}}	</span></p>
+  <p><span>	{{raidactivitiesClearedid}}	</span><span>	{{raidactivitiesClearedvalue}}	</span></p>
+  <p><span>	{{raidactivitiesEnteredid}}	</span><span>	{{raidactivitiesEnteredvalue}}	</span></p>
+  <p><span>	{{raidallParticipantsCountid}}	</span><span>	{{raidallParticipantsCountvalue}}	</span></p>
+  <p><span>	{{raidallParticipantsTimePlayedid}}	</span><span>	{{raidallParticipantsTimePlayedvalue}}	</span></p>
+  <p><span>	{{raidassistsid}}	</span><span>	{{raidassistsvalue}}	</span></p>
+  <p><span>	{{raidaverageDeathDistanceid}}	</span><span>	{{raidaverageDeathDistancevalue}}	</span></p>
+  <p><span>	{{raidaverageKillDistanceid}}	</span><span>	{{raidaverageKillDistancevalue}}	</span></p>
+  <p><span>	{{raidaverageLifespanid}}	</span><span>	{{raidaverageLifespanvalue}}	</span></p>
+  <p><span>	{{raidbestSingleGameKillsid}}	</span><span>	{{raidbestSingleGameKillsvalue}}	</span></p>
+  <p><span>	{{raidcourtOfOryxAttemptsid}}	</span><span>	{{raidcourtOfOryxAttemptsvalue}}	</span></p>
+  <p><span>	{{raidcourtOfOryxCompletionsid}}	</span><span>	{{raidcourtOfOryxCompletionsvalue}}	</span></p>
+  <p><span>	{{raidcourtOfOryxWinsTier1id}}	</span><span>	{{raidcourtOfOryxWinsTier1value}}	</span></p>
+  <p><span>	{{raiddeathsid}}	</span><span>	{{raiddeathsvalue}}	</span></p>
+  <p><span>	{{raidfastestCompletionid}}	</span><span>	{{raidfastestCompletionvalue}}	</span></p>
+  <p><span>	{{raidhighestCharacterLevelid}}	</span><span>	{{raidhighestCharacterLevelvalue}}	</span></p>
+  <p><span>	{{raidhighestLightLevelid}}	</span><span>	{{raidhighestLightLevelvalue}}	</span></p>
+  <p><span>	{{raidkillsid}}	</span><span>	{{raidkillsvalue}}	</span></p>
+  <p><span>	{{raidkillsDeathsAssistsid}}	</span><span>	{{raidkillsDeathsAssistsvalue}}	</span></p>
+  <p><span>	{{raidkillsDeathsRatioid}}	</span><span>	{{raidkillsDeathsRatiovalue}}	</span></p>
+  <p><span>	{{raidlongestKillDistanceid}}	</span><span>	{{raidlongestKillDistancevalue}}	</span></p>
+  <p><span>	{{raidlongestKillSpreeid}}	</span><span>	{{raidlongestKillSpreevalue}}	</span></p>
+  <p><span>	{{raidlongestSingleLifeid}}	</span><span>	{{raidlongestSingleLifevalue}}	</span></p>
+  <p><span>	{{raidmostPrecisionKillsid}}	</span><span>	{{raidmostPrecisionKillsvalue}}	</span></p>
+  <p><span>	{{raidobjectivesCompletedid}}	</span><span>	{{raidobjectivesCompletedvalue}}	</span></p>
+  <p><span>	{{raidorbsDroppedid}}	</span><span>	{{raidorbsDroppedvalue}}	</span></p>
+  <p><span>	{{raidorbsGatheredid}}	</span><span>	{{raidorbsGatheredvalue}}	</span></p>
+  <p><span>	{{raidprecisionKillsid}}	</span><span>	{{raidprecisionKillsvalue}}	</span></p>
+  <p><span>	{{raidpublicEventsCompletedid}}	</span><span>	{{raidpublicEventsCompletedvalue}}	</span></p>
+  <p><span>	{{raidpublicEventsJoinedid}}	</span><span>	{{raidpublicEventsJoinedvalue}}	</span></p>
+  <p><span>	{{raidremainingTimeAfterQuitSecondsid}}	</span><span>	{{raidremainingTimeAfterQuitSecondsvalue}}	</span></p>
+  <p><span>	{{raidresurrectionsPerformedid}}	</span><span>	{{raidresurrectionsPerformedvalue}}	</span></p>
+  <p><span>	{{raidresurrectionsReceivedid}}	</span><span>	{{raidresurrectionsReceivedvalue}}	</span></p>
+  <p><span>	{{raidsecondsPlayedid}}	</span><span>	{{raidsecondsPlayedvalue}}	</span></p>
+  <p><span>	{{raidsuicidesid}}	</span><span>	{{raidsuicidesvalue}}	</span></p>
+  <p><span>	{{raidtotalActivityDurationSecondsid}}	</span><span>	{{raidtotalActivityDurationSecondsvalue}}	</span></p>
+  <p><span>	{{raidtotalDeathDistanceid}}	</span><span>	{{raidtotalDeathDistancevalue}}	</span></p>
+  <p><span>	{{raidtotalKillDistanceid}}	</span><span>	{{raidtotalKillDistancevalue}}	</span></p>
+  <p><span>	{{raidweaponBestTypeid}}	</span><span>	{{raidweaponBestTypevalue}}	</span></p>
+  <p><span>	{{raidweaponKillsAutoRifleid}}	</span><span>	{{raidweaponKillsAutoRiflevalue}}	</span></p>
+  <p><span>	{{raidweaponKillsFusionRifleid}}	</span><span>	{{raidweaponKillsFusionRiflevalue}}	</span></p>
+  <p><span>	{{raidweaponKillsGrenadeid}}	</span><span>	{{raidweaponKillsGrenadevalue}}	</span></p>
+  <p><span>	{{raidweaponKillsHandCannonid}}	</span><span>	{{raidweaponKillsHandCannonvalue}}	</span></p>
+  <p><span>	{{raidweaponKillsMachinegunid}}	</span><span>	{{raidweaponKillsMachinegunvalue}}	</span></p>
+  <p><span>	{{raidweaponKillsMeleeid}}	</span><span>	{{raidweaponKillsMeleevalue}}	</span></p>
+  <p><span>	{{raidweaponKillsPulseRifleid}}	</span><span>	{{raidweaponKillsPulseRiflevalue}}	</span></p>
+  <p><span>	{{raidweaponKillsRelicid}}	</span><span>	{{raidweaponKillsRelicvalue}}	</span></p>
+  <p><span>	{{raidweaponKillsRocketLauncherid}}	</span><span>	{{raidweaponKillsRocketLaunchervalue}}	</span></p>
+  <p><span>	{{raidweaponKillsScoutRifleid}}	</span><span>	{{raidweaponKillsScoutRiflevalue}}	</span></p>
+  <p><span>	{{raidweaponKillsShotgunid}}	</span><span>	{{raidweaponKillsShotgunvalue}}	</span></p>
+  <p><span>	{{raidweaponKillsSideArmid}}	</span><span>	{{raidweaponKillsSideArmvalue}}	</span></p>
+  <p><span>	{{raidweaponKillsSniperid}}	</span><span>	{{raidweaponKillsSnipervalue}}	</span></p>
+  <p><span>	{{raidweaponKillsSubmachinegunid}}	</span><span>	{{raidweaponKillsSubmachinegunvalue}}	</span></p>
+  <p><span>	{{raidweaponKillsSuperid}}	</span><span>	{{raidweaponKillsSupervalue}}	</span></p>
+
+  <p>STORY</p>
+  <!--<p>{{story}}</p>-->
+
+  <p><span>	{{storyabilityKillsid}}	</span><span>	{{storyabilityKillsvalue}}	</span></p>
+  <p><span>	{{storyactivitiesClearedid}}	</span><span>	{{storyactivitiesClearedvalue}}	</span></p>
+  <p><span>	{{storyactivitiesEnteredid}}	</span><span>	{{storyactivitiesEnteredvalue}}	</span></p>
+  <p><span>	{{storyallParticipantsCountid}}	</span><span>	{{storyallParticipantsCountvalue}}	</span></p>
+  <p><span>	{{storyallParticipantsTimePlayedid}}	</span><span>	{{storyallParticipantsTimePlayedvalue}}	</span></p>
+  <p><span>	{{storyassistsid}}	</span><span>	{{storyassistsvalue}}	</span></p>
+  <p><span>	{{storyaverageDeathDistanceid}}	</span><span>	{{storyaverageDeathDistancevalue}}	</span></p>
+  <p><span>	{{storyaverageKillDistanceid}}	</span><span>	{{storyaverageKillDistancevalue}}	</span></p>
+  <p><span>	{{storyaverageLifespanid}}	</span><span>	{{storyaverageLifespanvalue}}	</span></p>
+  <p><span>	{{storybestSingleGameKillsid}}	</span><span>	{{storybestSingleGameKillsvalue}}	</span></p>
+  <p><span>	{{storycourtOfOryxAttemptsid}}	</span><span>	{{storycourtOfOryxAttemptsvalue}}	</span></p>
+  <p><span>	{{storycourtOfOryxCompletionsid}}	</span><span>	{{storycourtOfOryxCompletionsvalue}}	</span></p>
+  <p><span>	{{storycourtOfOryxWinsTier1id}}	</span><span>	{{storycourtOfOryxWinsTier1value}}	</span></p>
+  <p><span>	{{storydeathsid}}	</span><span>	{{storydeathsvalue}}	</span></p>
+  <p><span>	{{storyfastestCompletionid}}	</span><span>	{{storyfastestCompletionvalue}}	</span></p>
+  <p><span>	{{storyhighestCharacterLevelid}}	</span><span>	{{storyhighestCharacterLevelvalue}}	</span></p>
+  <p><span>	{{storyhighestLightLevelid}}	</span><span>	{{storyhighestLightLevelvalue}}	</span></p>
+  <p><span>	{{storykillsid}}	</span><span>	{{storykillsvalue}}	</span></p>
+  <p><span>	{{storykillsDeathsAssistsid}}	</span><span>	{{storykillsDeathsAssistsvalue}}	</span></p>
+  <p><span>	{{storykillsDeathsRatioid}}	</span><span>	{{storykillsDeathsRatiovalue}}	</span></p>
+  <p><span>	{{storylongestKillDistanceid}}	</span><span>	{{storylongestKillDistancevalue}}	</span></p>
+  <p><span>	{{storylongestKillSpreeid}}	</span><span>	{{storylongestKillSpreevalue}}	</span></p>
+  <p><span>	{{storylongestSingleLifeid}}	</span><span>	{{storylongestSingleLifevalue}}	</span></p>
+  <p><span>	{{storymostPrecisionKillsid}}	</span><span>	{{storymostPrecisionKillsvalue}}	</span></p>
+  <p><span>	{{storyobjectivesCompletedid}}	</span><span>	{{storyobjectivesCompletedvalue}}	</span></p>
+  <p><span>	{{storyorbsDroppedid}}	</span><span>	{{storyorbsDroppedvalue}}	</span></p>
+  <p><span>	{{storyorbsGatheredid}}	</span><span>	{{storyorbsGatheredvalue}}	</span></p>
+  <p><span>	{{storyprecisionKillsid}}	</span><span>	{{storyprecisionKillsvalue}}	</span></p>
+  <p><span>	{{storypublicEventsCompletedid}}	</span><span>	{{storypublicEventsCompletedvalue}}	</span></p>
+  <p><span>	{{storypublicEventsJoinedid}}	</span><span>	{{storypublicEventsJoinedvalue}}	</span></p>
+  <p><span>	{{storyremainingTimeAfterQuitSecondsid}}	</span><span>	{{storyremainingTimeAfterQuitSecondsvalue}}	</span></p>
+  <p><span>	{{storyresurrectionsPerformedid}}	</span><span>	{{storyresurrectionsPerformedvalue}}	</span></p>
+  <p><span>	{{storyresurrectionsReceivedid}}	</span><span>	{{storyresurrectionsReceivedvalue}}	</span></p>
+  <p><span>	{{storysecondsPlayedid}}	</span><span>	{{storysecondsPlayedvalue}}	</span></p>
+  <p><span>	{{storysuicidesid}}	</span><span>	{{storysuicidesvalue}}	</span></p>
+  <p><span>	{{storytotalActivityDurationSecondsid}}	</span><span>	{{storytotalActivityDurationSecondsvalue}}	</span></p>
+  <p><span>	{{storytotalDeathDistanceid}}	</span><span>	{{storytotalDeathDistancevalue}}	</span></p>
+  <p><span>	{{storytotalKillDistanceid}}	</span><span>	{{storytotalKillDistancevalue}}	</span></p>
+  <p><span>	{{storyweaponBestTypeid}}	</span><span>	{{storyweaponBestTypevalue}}	</span></p>
+  <p><span>	{{storyweaponKillsAutoRifleid}}	</span><span>	{{storyweaponKillsAutoRiflevalue}}	</span></p>
+  <p><span>	{{storyweaponKillsFusionRifleid}}	</span><span>	{{storyweaponKillsFusionRiflevalue}}	</span></p>
+  <p><span>	{{storyweaponKillsGrenadeid}}	</span><span>	{{storyweaponKillsGrenadevalue}}	</span></p>
+  <p><span>	{{storyweaponKillsHandCannonid}}	</span><span>	{{storyweaponKillsHandCannonvalue}}	</span></p>
+  <p><span>	{{storyweaponKillsMachinegunid}}	</span><span>	{{storyweaponKillsMachinegunvalue}}	</span></p>
+  <p><span>	{{storyweaponKillsMeleeid}}	</span><span>	{{storyweaponKillsMeleevalue}}	</span></p>
+  <p><span>	{{storyweaponKillsPulseRifleid}}	</span><span>	{{storyweaponKillsPulseRiflevalue}}	</span></p>
+  <p><span>	{{storyweaponKillsRelicid}}	</span><span>	{{storyweaponKillsRelicvalue}}	</span></p>
+  <p><span>	{{storyweaponKillsRocketLauncherid}}	</span><span>	{{storyweaponKillsRocketLaunchervalue}}	</span></p>
+  <p><span>	{{storyweaponKillsScoutRifleid}}	</span><span>	{{storyweaponKillsScoutRiflevalue}}	</span></p>
+  <p><span>	{{storyweaponKillsShotgunid}}	</span><span>	{{storyweaponKillsShotgunvalue}}	</span></p>
+  <p><span>	{{storyweaponKillsSideArmid}}	</span><span>	{{storyweaponKillsSideArmvalue}}	</span></p>
+  <p><span>	{{storyweaponKillsSniperid}}	</span><span>	{{storyweaponKillsSnipervalue}}	</span></p>
+  <p><span>	{{storyweaponKillsSubmachinegunid}}	</span><span>	{{storyweaponKillsSubmachinegunvalue}}	</span></p>
+  <p><span>	{{storyweaponKillsSuperid}}	</span><span>	{{storyweaponKillsSupervalue}}	</span></p>
+  <p><span>	{{storyweaponKillsSwordid}}	</span><span>	{{storyweaponKillsSwordvalue}}	</span></p>
+
+  <p>AGGSTATS</p>
+  <!--<p>{{aggStats}}</p>-->
+
+  <p><span>	{{mergedabilityKillsid}}	</span><span>	{{mergedabilityKillsvalue}}	</span></p>
+  <p><span>	{{mergedactivitiesClearedid}}	</span><span>	{{mergedactivitiesClearedvalue}}	</span></p>
+  <p><span>	{{mergedactivitiesEnteredid}}	</span><span>	{{mergedactivitiesEnteredvalue}}	</span></p>
+  <p><span>	{{mergedactivitiesWonid}}	</span><span>	{{mergedactivitiesWonvalue}}	</span></p>
+  <p><span>	{{mergedallParticipantsCountid}}	</span><span>	{{mergedallParticipantsCountvalue}}	</span></p>
+  <p><span>	{{mergedallParticipantsScoreid}}	</span><span>	{{mergedallParticipantsScorevalue}}	</span></p>
+  <p><span>	{{mergedallParticipantsTimePlayedid}}	</span><span>	{{mergedallParticipantsTimePlayedvalue}}	</span></p>
+  <p><span>	{{mergedassistsid}}	</span><span>	{{mergedassistsvalue}}	</span></p>
+  <p><span>	{{mergedaverageDeathDistanceid}}	</span><span>	{{mergedaverageDeathDistancevalue}}	</span></p>
+  <p><span>	{{mergedaverageKillDistanceid}}	</span><span>	{{mergedaverageKillDistancevalue}}	</span></p>
+  <p><span>	{{mergedaverageLifespanid}}	</span><span>	{{mergedaverageLifespanvalue}}	</span></p>
+  <p><span>	{{mergedaverageScorePerKillid}}	</span><span>	{{mergedaverageScorePerKillvalue}}	</span></p>
+  <p><span>	{{mergedaverageScorePerLifeid}}	</span><span>	{{mergedaverageScorePerLifevalue}}	</span></p>
+  <p><span>	{{mergedbestSingleGameKillsid}}	</span><span>	{{mergedbestSingleGameKillsvalue}}	</span></p>
+  <p><span>	{{mergedbestSingleGameScoreid}}	</span><span>	{{mergedbestSingleGameScorevalue}}	</span></p>
+  <p><span>	{{mergedcloseCallsid}}	</span><span>	{{mergedcloseCallsvalue}}	</span></p>
+  <p><span>	{{mergedcombatRatingid}}	</span><span>	{{mergedcombatRatingvalue}}	</span></p>
+  <p><span>	{{mergedcourtOfOryxAttemptsid}}	</span><span>	{{mergedcourtOfOryxAttemptsvalue}}	</span></p>
+  <p><span>	{{mergedcourtOfOryxCompletionsid}}	</span><span>	{{mergedcourtOfOryxCompletionsvalue}}	</span></p>
+  <p><span>	{{mergedcourtOfOryxWinsTier1id}}	</span><span>	{{mergedcourtOfOryxWinsTier1value}}	</span></p>
+  <p><span>	{{mergeddeathsid}}	</span><span>	{{mergeddeathsvalue}}	</span></p>
+  <p><span>	{{mergeddefensiveKillsid}}	</span><span>	{{mergeddefensiveKillsvalue}}	</span></p>
+  <p><span>	{{mergeddominationKillsid}}	</span><span>	{{mergeddominationKillsvalue}}	</span></p>
+  <p><span>	{{mergedfastestCompletionid}}	</span><span>	{{mergedfastestCompletionvalue}}	</span></p>
+  <p><span>	{{mergedhighestCharacterLevelid}}	</span><span>	{{mergedhighestCharacterLevelvalue}}	</span></p>
+  <p><span>	{{mergedhighestLightLevelid}}	</span><span>	{{mergedhighestLightLevelvalue}}	</span></p>
+  <p><span>	{{mergedkillsid}}	</span><span>	{{mergedkillsvalue}}	</span></p>
+  <p><span>	{{mergedkillsDeathsAssistsid}}	</span><span>	{{mergedkillsDeathsAssistsvalue}}	</span></p>
+  <p><span>	{{mergedkillsDeathsRatioid}}	</span><span>	{{mergedkillsDeathsRatiovalue}}	</span></p>
+  <p><span>	{{mergedlongestKillDistanceid}}	</span><span>	{{mergedlongestKillDistancevalue}}	</span></p>
+  <p><span>	{{mergedlongestKillSpreeid}}	</span><span>	{{mergedlongestKillSpreevalue}}	</span></p>
+  <p><span>	{{mergedlongestSingleLifeid}}	</span><span>	{{mergedlongestSingleLifevalue}}	</span></p>
+  <p><span>	{{mergedmostPrecisionKillsid}}	</span><span>	{{mergedmostPrecisionKillsvalue}}	</span></p>
+  <p><span>	{{mergedobjectivesCompletedid}}	</span><span>	{{mergedobjectivesCompletedvalue}}	</span></p>
+  <p><span>	{{mergedoffensiveKillsid}}	</span><span>	{{mergedoffensiveKillsvalue}}	</span></p>
+  <p><span>	{{mergedorbsDroppedid}}	</span><span>	{{mergedorbsDroppedvalue}}	</span></p>
+  <p><span>	{{mergedorbsGatheredid}}	</span><span>	{{mergedorbsGatheredvalue}}	</span></p>
+  <p><span>	{{mergedprecisionKillsid}}	</span><span>	{{mergedprecisionKillsvalue}}	</span></p>
+  <p><span>	{{mergedpublicEventsCompletedid}}	</span><span>	{{mergedpublicEventsCompletedvalue}}	</span></p>
+  <p><span>	{{mergedpublicEventsJoinedid}}	</span><span>	{{mergedpublicEventsJoinedvalue}}	</span></p>
+  <p><span>	{{mergedrelicsCapturedid}}	</span><span>	{{mergedrelicsCapturedvalue}}	</span></p>
+  <p><span>	{{mergedremainingTimeAfterQuitSecondsid}}	</span><span>	{{mergedremainingTimeAfterQuitSecondsvalue}}	</span></p>
+  <p><span>	{{mergedresurrectionsPerformedid}}	</span><span>	{{mergedresurrectionsPerformedvalue}}	</span></p>
+  <p><span>	{{mergedresurrectionsReceivedid}}	</span><span>	{{mergedresurrectionsReceivedvalue}}	</span></p>
+  <p><span>	{{mergedscoreid}}	</span><span>	{{mergedscorevalue}}	</span></p>
+  <p><span>	{{mergedsecondsPlayedid}}	</span><span>	{{mergedsecondsPlayedvalue}}	</span></p>
+  <p><span>	{{mergedsuicidesid}}	</span><span>	{{mergedsuicidesvalue}}	</span></p>
+  <p><span>	{{mergedteamScoreid}}	</span><span>	{{mergedteamScorevalue}}	</span></p>
+  <p><span>	{{mergedtotalActivityDurationSecondsid}}	</span><span>	{{mergedtotalActivityDurationSecondsvalue}}	</span></p>
+  <p><span>	{{mergedtotalDeathDistanceid}}	</span><span>	{{mergedtotalDeathDistancevalue}}	</span></p>
+  <p><span>	{{mergedtotalKillDistanceid}}	</span><span>	{{mergedtotalKillDistancevalue}}	</span></p>
+  <p><span>	{{mergedweaponBestTypeid}}	</span><span>	{{mergedweaponBestTypevalue}}	</span></p>
+  <p><span>	{{mergedweaponKillsAutoRifleid}}	</span><span>	{{mergedweaponKillsAutoRiflevalue}}	</span></p>
+  <p><span>	{{mergedweaponKillsFusionRifleid}}	</span><span>	{{mergedweaponKillsFusionRiflevalue}}	</span></p>
+  <p><span>	{{mergedweaponKillsGrenadeid}}	</span><span>	{{mergedweaponKillsGrenadevalue}}	</span></p>
+  <p><span>	{{mergedweaponKillsHandCannonid}}	</span><span>	{{mergedweaponKillsHandCannonvalue}}	</span></p>
+  <p><span>	{{mergedweaponKillsMachinegunid}}	</span><span>	{{mergedweaponKillsMachinegunvalue}}	</span></p>
+  <p><span>	{{mergedweaponKillsMeleeid}}	</span><span>	{{mergedweaponKillsMeleevalue}}	</span></p>
+  <p><span>	{{mergedweaponKillsPulseRifleid}}	</span><span>	{{mergedweaponKillsPulseRiflevalue}}	</span></p>
+  <p><span>	{{mergedweaponKillsRelicid}}	</span><span>	{{mergedweaponKillsRelicvalue}}	</span></p>
+  <p><span>	{{mergedweaponKillsRocketLauncherid}}	</span><span>	{{mergedweaponKillsRocketLaunchervalue}}	</span></p>
+  <p><span>	{{mergedweaponKillsScoutRifleid}}	</span><span>	{{mergedweaponKillsScoutRiflevalue}}	</span></p>
+  <p><span>	{{mergedweaponKillsShotgunid}}	</span><span>	{{mergedweaponKillsShotgunvalue}}	</span></p>
+  <p><span>	{{mergedweaponKillsSideArmid}}	</span><span>	{{mergedweaponKillsSideArmvalue}}	</span></p>
+  <p><span>	{{mergedweaponKillsSniperid}}	</span><span>	{{mergedweaponKillsSnipervalue}}	</span></p>
+  <p><span>	{{mergedweaponKillsSubmachinegunid}}	</span><span>	{{mergedweaponKillsSubmachinegunvalue}}	</span></p>
+  <p><span>	{{mergedweaponKillsSuperid}}	</span><span>	{{mergedweaponKillsSupervalue}}	</span></p>
+  <p><span>	{{mergedweaponKillsSwordid}}	</span><span>	{{mergedweaponKillsSwordvalue}}	</span></p>
+  <p><span>	{{mergedwinLossRatioid}}	</span><span>	{{mergedwinLossRatiovalue}}	</span></p>
+  <p><span>	{{mergedzonesCapturedid}}	</span><span>	{{mergedzonesCapturedvalue}}	</span></p>
+  <p><span>	{{mergedzonesNeutralizedid}}	</span><span>	{{mergedzonesNeutralizedvalue}}	</span></p>
 </div>
 </body>
 </html>

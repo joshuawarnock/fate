@@ -6,6 +6,7 @@ var express = require('express');
 var router = express.Router();
 var request = require('request');
 
+// Gets memberid number
 router.get('/member/:screename', function(req, res) {
   var memOptions = {
     url: 'https://www.bungie.net/platform/' +
@@ -20,6 +21,7 @@ router.get('/member/:screename', function(req, res) {
   });
 });
 
+// Gets characterid number
 router.get('/customer/:member', function(req, res) {
   var charOptions = {
     url: 'https://www.bungie.net/platform/destiny/2/Account/' + req.params.member + '/',
@@ -33,6 +35,7 @@ router.get('/customer/:member', function(req, res) {
   })
 });
 
+// Gets historical stats for character
 router.get('/stats/:member/:character', function(req, res) {
   var statOptions = {
     url: 'https://www.bungie.net/platform/destiny/Stats/2/' + req.params.member +
@@ -48,6 +51,7 @@ router.get('/stats/:member/:character', function(req, res) {
   })
 });
 
+// Gets aggregate stats for character
 router.get('/aggstats/:member', function(req, res) {
   var aggstatOptions = {
     url: 'https://www.bungie.net/platform/destiny/Stats/Account/2/' + req.params.member + '/',
@@ -56,7 +60,7 @@ router.get('/aggstats/:member', function(req, res) {
     }
   };
   request(aggstatOptions, function(error, response, body) {
-    var aggStats = JSON.parse(body).Response;
+    var aggStats = JSON.parse(body).Response.mergedAllCharacters.merged.allTime;
     res.send(aggStats);
   })
 });
